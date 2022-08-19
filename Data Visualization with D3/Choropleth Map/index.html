@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='"stylesheet' href='/stylesheet.css'>
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js' integrity="sha256-tHoAPGoNdhIR28YHl9DWLzeRfdwigkH7OCBXMrHXhoM=" crossorigin='anonymous'></script>
+    <title>Choropleth Map</title>
+</head>
+<body>
+    <h2 id='title' align='center'>USA Education Data by County</h2>
+    
+    <div id='container' width='886' height='220' align='center'>
+
+        <svg id='canvas' width='1100' height='600' align='center'>
+        
+        </svg>
+        <div id='bottomPanel' align='right'>
+        <div id='tooltip' align='center'>
+
+        </div>   
+    <svg id='legend' width='800' height='200'>
+        <g>
+            <rect x="10" y="0" width="100" height="20" fill="yellow"> </rect>
+            <text x="150" y="15" class="graph-legend" text-anchor="middle">15% or less</text>
+        </g>
+        <g>
+            <rect x="10" y="20" width="100" height="20" fill="orange"> </rect>
+            <text x="150" y="35" class="graph-legend" text-anchor="middle">16% to 30%</text>
+        </g>
+        <g>
+            <rect x="10" y="40" width="100" height="20" fill="lightgreen"> </rect>
+            <text x="150" y="55" class="graph-legend" text-anchor="middle">31% to 45%</text>
+        </g>
+        <g>
+            <rect x="10" y="60" width="100" height="20" fill="green"> </rect>        
+            <text x="155" y="75" class="graph-legend" text-anchor="middle">45% or more</text>
+        </g>
+    </svg>
+    <div id='description' align='center'>
+        Percentage of people over the age of 25 with a bachelors degree or higher. Source:
+         <a href='https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx'>USDA Economic Research Service</a>
+    </div>
+    </div>
+</div>
+ 
+</body>
+<style>.county:hover{fill:black}</style> 
+<script defer src='script.js' ></script>
+<script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js' ></script>
+</html>

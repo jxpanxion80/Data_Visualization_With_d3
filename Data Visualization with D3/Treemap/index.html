@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./style.css'>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Treemap Diagram</title>
+</head>
+<body>
+    <h1 id='title'>Highest Grossing Movies</h1>
+    <div id='description'>95 Top Grossing Movies by Revenue</div>
+    <div id='tooltip'></div>
+    <svg id='canvas'>
+
+    </svg><br>
+    <svg id='legend' width='150' height='200'>
+        <g>
+            <rect class='legend-item' x="15" y="20" width="120" height="20" fill="LightSalmon"> </rect>
+            <text x="70" y="35" class="graph-legend" text-anchor="middle">Action</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="15" y="40" width="120" height="20" fill="magenta"> </rect>
+            <text x="70" y="55" class="graph-legend" text-anchor="middle">Drama</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="15" y="60" width="120" height="20" fill="orange"> </rect>        
+            <text x="70" y="75" class="graph-legend" text-anchor="middle">Adventure</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="15" y="80" width="120" height="20" fill="aqua"> </rect>
+            <text x="70" y="95" class="graph-legend" text-anchor="middle">Family</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="15" y="100" width="120" height="20" fill="gold"> </rect>
+            <text x="70" y="115" class="graph-legend" text-anchor="middle">Animation</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="15" y="120" width="120" height="20" fill="lawngreen"> </rect>        
+            <text x="70" y="135" class="graph-legend" text-anchor="middle">Comedy</text>
+        </g>
+        <g>
+            <rect class='legend-item' x="15" y="140" width="120" height="20" fill="wheat"> </rect>        
+            <text x="70" y="155" class="graph-legend" text-anchor="middle">Biography</text>
+        </g>
+    </svg>
+    
+</body>
+<script defer src='script.js' ></script>
+<script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js' ></script>
+</html>

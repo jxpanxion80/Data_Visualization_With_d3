@@ -1,0 +1,7 @@
+d3 is used to target the D3 object
+select('body') targets the ‘body’ element of the HTML document
+selectAll('h2') targets the existing ‘h2’ nodes that are children to the ‘body’ element
+data(dataset) tells D3 that the data to be used is held within the variable dataset
+enter() returns placeholder nodes for each datum that has no corresponding DOM element in the selection
+append('h2') turns these placesholders in to ‘h2’ elements
+text((d) => d + ' USD') uses JavaScripts callback functionality to insert each datum, d, as the text for each ‘h2’ node created previously and concatenates the required ’ USD’

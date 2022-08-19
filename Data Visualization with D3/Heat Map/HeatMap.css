@@ -1,0 +1,40 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+html{ 
+    min-height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    
+}
+
+svg{
+   background-color: black;
+   color: white;
+}
+
+
+#canvas{
+    min-height: 600px;
+    min-width: 1200px;
+}
+
+#legend{
+    background-color: whitesmoke;
+    width:1200px;
+    height: 80px;
+}
+
+#tooltip{
+    visibility: hidden;
+    height: auto;
+    width:auto;
+}
